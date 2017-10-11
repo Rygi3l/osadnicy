@@ -1,0 +1,17 @@
+echo date('d.m.Y H:i:s')."<br>";
+	
+	$dataczas = new DateTime();
+	echo $dataczas->format('d.m.Y H:i:s');
+	
+	$dzien = 26;
+	$miesiac = 7;
+	$rok = 1875;
+	
+	if(checkdate($miesiac, $dzien, $rok))  // miesiac zawsze pierwszy, w checkdate trzeba uzywac notacji amerykanskiej
+	{
+		echo "<br>Poprawna data!";
+	}
+	else
+	{
+		echo "<br>Niepoprawna data!";
+	}
